@@ -6,13 +6,24 @@
 h1{
     font-size: 60px;
 }
+
+body {
+    background-color: ivory;
+}
+
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/mewithelephant.png');
-    background-size:cover;
-    width:100%;
-    height:790px;
+    background: url('images/Songs of Ivory (3).png');
+    background-position: center center; /* Centers the image */
+    background-position: top center;    /* Keeps the top visible */
+    background-position: right center;   /* Keeps the left side visible */
+    background-size: contain;
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-size: 100% auto;  /* Fits width, adjusts height automatically */
+    background-size: auto 100%;  Fits height, adjusts width automatically
+    background-size: 620px auto; /* Adjust width, keep aspect ratio */
+    background-attachment: fixed;
 }
 
 /* about section image css */
