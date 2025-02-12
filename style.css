@@ -21,7 +21,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat; /* Prevents tiling */
     background-size: 100% auto;  /* Fits width, adjusts height automatically */
-    background-size: auto 100%;  Fits height, adjusts width automatically
+    background-size: auto 100%;  /* Fits height, adjusts width automatically */
     background-size: 620px auto; /* Adjust width, keep aspect ratio */
     background-attachment: fixed;
 }
