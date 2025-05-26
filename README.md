@@ -1,2 +1,0 @@
-# songsofivory
-Piano Instructor Website

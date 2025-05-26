@@ -11,19 +11,34 @@ body {
     background-color: ivory;
 }
 
-/* hero background image */
+.custom-link {
+  text-decoration: none;     /* Removes underline */
+  color: #4A90E2;            /* Custom color */
+  font-size:35px;           /* Normal text size */
+  font-weight: normal;       /* Removes bold */
+}
+
+.custom-link:hover {
+  color: #2A5F9E;            /* Optional hover effect */
+}
+
+
+.image-container {
+  display: flex;
+  height: 100vh; /* Or however tall you want it */
+}
+
 .bgimage {
-    height:100vh;
-    background: url('images/Songs of Ivory (3).png');
-    background-position: center center; /* Centers the image */
-    background-position: top center;    /* Keeps the top visible */
-    background-position: right center;   /* Keeps the left side visible */
-    background-size: contain;
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-size: 100% auto;  /* Fits width, adjusts height automatically */
-    background-size: auto 100%;  /* Fits height, adjusts width automatically */
-    background-size: 620px auto; /* Adjust width, keep aspect ratio */
-    background-attachment: fixed;
+  flex: 1;
+  background: url('images/alena.png') no-repeat left center;
+  background-size: cover;
+}
+
+/* Right side with a background image */
+.right-side {
+  flex: 1.5;
+  background: url('images/songs.png') no-repeat center center;
+  background-size: cover; /* or contain depending on effect you want */
 }
 
 /* about section image css */
@@ -166,10 +181,6 @@ h3 {
 
 .title-font {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.image-container {
-    display: inline-block;
 }
 
 /* Indenting a sentence */
