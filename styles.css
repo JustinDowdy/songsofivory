@@ -3,24 +3,57 @@
     background-color: black;
 }
 
+.container {
+  width: 90%;       /* good */
+  max-width: 600px; /* optional max width for larger screens */
+  margin: 0 auto;   /* centers the container */
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}
+
 h1{
     font-size: 60px;
 }
 
 body {
     background-color: ivory;
+    background-image: url('images/ivory_keys.png');
+    background-size: cover; 
+    background-position: center;   /* Center the image */
+    background-attachment: fixed; 
 }
 
-.custom-link {
-  text-decoration: none;     /* Removes underline */
-  color: #4A90E2;            /* Custom color */
-  font-size:35px;           /* Normal text size */
-  font-weight: normal;       /* Removes bold */
+.contact-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.custom-link:hover {
-  color: #2A5F9E;            /* Optional hover effect */
+.contact-link:hover {
+  color: #007bff;
+  text-decoration: underline;
 }
+
 
 
 .image-container {
@@ -28,18 +61,28 @@ body {
   height: 100vh; /* Or however tall you want it */
 }
 
-.bgimage {
+/* .bgimage {
   flex: 1;
   background: url('images/alena.png') no-repeat left center;
   background-size: cover;
-}
+} */
 
 /* Right side with a background image */
-.right-side {
+/* .right-side {
   flex: 1.5;
   background: url('images/songs.png') no-repeat center center;
-  background-size: cover; /* or contain depending on effect you want */
+  background-size: cover; /* or contain depending on effect you want
+} */
+ 
+.responsive-image {
+  width: 100%;      /* image fills container width */
+  max-width: 800px; /* optional: max width on big screens */
+  height: auto;     /* maintain aspect ratio */
+  display: block;   /* remove bottom gap */
+  margin: 0 auto;   /* center horizontally */
+  object-fit: cover; /* ensures nice cropping if container resizes */
 }
+
 
 /* about section image css */
 .imageAboutPage {
